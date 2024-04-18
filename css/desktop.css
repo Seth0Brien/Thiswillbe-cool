@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background-color: #151515;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+header {
+    padding: 2rem 5rem 0;
+    overflow-x: hidden;
+}
+
+/* upper header */
+
+.header-footer {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.header-footer ul {
+    display: flex;
+}
+
+.header-footer ul li {
+    margin-left: 1.5rem;
+    cursor: pointer;
+    fill: white;
+}
+
+.header-footer ul li:hover {
+    fill: #4ee1a0;
+}
+
+/* lower header */
+
+.lower-header {
+    display: flex;
+    position: relative;
+    color: white;
+}
+
+.header-rings {
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    top: 8%;
+}
+
+
+/* Intro Text */
+
+.intro-text {
+    margin-top: 5rem;
+}
+
+
+/* Header Image */
+
+.lower-header img {
+    width: 60%;
+    transform: translateX(25%);
+}
+
+.lower-header picture {
+    position: relative;
+    top: -5rem;
+    right: 0;
+    z-index: -1;
+}
+
+.circle {
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    transform: scale(75%);
+}
+
+/* MAIN */
+
+main {
+    padding: 0 5rem 3rem;
+    overflow-x: hidden;
+}
+
+/* Experience */
+
+main hr {
+    height: 1px;
+    border: none;
+    background-color: white;
+    margin-bottom: 4rem;
+}
+
+.experience {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 10rem;
+    position: relative;
+}
+
+h5 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.experience span {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    color: #d9d9d9;
+}
+
+.main-rings {
+    position: absolute;
+    right: -25%;
+    bottom: -40%;
+}
+
+.experience hr {
+    display: none;
+}
+
+
+/* PROJECT GALLERY */
+
+.projects {
+    width: fit-content;
+}
+
+.projects picture {
+    position: relative;
+    height: 100%;
+}
+
+.projects img {
+    display: block;
+}
+
+.gallery {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery img,
+.gallery picture {
+    width: 100%;
+    cursor: pointer;
+}
+
+.gallery picture {
+    margin-bottom: 2rem;
+}
+
+.project-details {
+    color: white;
+    margin-top: 10px;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.project-title #contact-button {
+    margin: 0;
+}
+
+h3 {
+    font-size: 48px;
+    color: white;
+}
+
+h6 {
+    font-size: 18px;
+
+}
+
+.project-details span {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+/* Project Content */
+
+.view-project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all ease-in-out 0.2s;
+    opacity: 0;
+}
+
+.view-project:hover {
+    opacity: 1;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #242424;
+    padding: 5rem 5rem 4rem;
+    color: white;
+    position: relative;
+}
+
+.contact {
+    display: flex;
+    margin-bottom: 8rem;
+}
+
+footer hr {
+    margin-bottom: 2.5rem;
+}
+
+/* SVG */
+
+.footer-rings {
+    position: absolute;
+    left: -15%;
+    top: 45%;
+}
+
+/* Contact Input */
+
+.contact-input {
+    display: flex;
+    flex-direction: column;
+    color: #d9d9d9;
+    width: 30%;
+    margin-right: 10%;
+}
+
+#submit-btn {
+    width: 40%;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transform: translate(150%);
+    margin-top: 1.5rem;
+}
+
+.contact-input input,
+.contact-input textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: #d9d9d9 solid;
+    resize: none;
+    color: #d9d9d9;
+    padding: 1rem 1.5rem;
+}
+
+/* EXTRAS */
+
+#contact-button,
+#submit-btn,
+.projects a {
+    padding: 6px 0;
+    border: none;
+    border-bottom: solid #4ee1a0;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    transition: all ease 0.2s;
+}
+
+#contact-button a:hover,
+#submit-btn:hover,
+.projects a:hover {
+    color: #4ee1a0;
+    transition: 0.2s;
+}
+
+#contact-button a {
+    color: white;
+    letter-spacing: 2px;
+}
+
+header h2,
+footer h6 {
+    font-size: 60px;
+    margin-bottom: 2rem;
+}
+
+header p,
+footer p {
+    font-size: 18px;
+    font-weight: 100;
+    width: 55%;
+    margin-bottom: 3rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
